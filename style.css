@@ -1,0 +1,88 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background: #181818; /* Dark gray background */
+    color: #e0e0e0; /* Light gray text color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.resume {
+    background: #2e2e2e; /* Medium gray background for the resume */
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resume:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 4px solid #4a90e2; /* Light blue border */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+    border-color: #357abd; /* Darker blue border on hover */
+}
+
+h1 {
+    color: #e0e0e0; /* Light gray text color */
+    margin: 10px 0;
+}
+
+button {
+    background: #4a90e2; /* Light blue button color */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background: #357abd; /* Brighter blue on hover */
+    transform: scale(1.05);
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+#skillsContent {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+#skillsContent.show {
+    max-height: 500px; /* Or a value larger than the content height */
+    opacity: 1;
+}
+
+#skillsContent.hide {
+    max-height: 0;
+    opacity: 0;
+}
+
